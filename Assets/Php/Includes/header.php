@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="../Assets/Css/style.css">
     <?php
     if(isset($style)){
-        switch($style){
-            case "login":
-                echo "<link rel='stylesheet' href='../Assets/Css/login.css'>";
-                break;
-        }
+        echo "<link rel='stylesheet' href='../Assets/Css/$style.css'>";
     }
     ?>
     <link rel="icon" href="../Assets/Images/favicon.ico">

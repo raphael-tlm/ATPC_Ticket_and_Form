@@ -3,7 +3,7 @@
 session_start();
 
 if(isset($_SESSION['on'])){
-    header('Location: View/home.php');
+    header('Location: home.php');
 }
 
 require_once ('../Assets/Php/Functions/db.php');
@@ -31,4 +31,4 @@ include ('../Assets/Php/Includes/header.php');
         </div>
     </div>
 </body>
-<script src="../Assets/Js/login.js"></script>
+<script src="../Assets/Js/popup.js"></script>
