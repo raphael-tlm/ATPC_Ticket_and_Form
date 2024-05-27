@@ -1,0 +1,12 @@
+- [x] Data Base connection 
+- [ ] Login
+    - [x] Login UI 
+    - [ ] Login UX
+    - [x] Error handler
+    - [?] Redirection 
+- [ ] Register 
+    - [ ] Register UI
+    - [ ] Register UX
+    - [ ] Error handler 
+    - [ ] Redirection
+    - [ ] Already existing mail
