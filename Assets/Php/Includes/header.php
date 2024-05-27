@@ -5,5 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title;?></title>
     <link rel="stylesheet" href="../Assets/Css/style.css">
+    <?php
+    if(isset($style)){
+        switch($style){
+            case "login":
+                echo "<link rel='stylesheet' href='../Assets/Css/login.css'>";
+                break;
+        }
+    }
+    ?>
     <link rel="icon" href="../Assets/Images/favicon.ico">
 </head>
