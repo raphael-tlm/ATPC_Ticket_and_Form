@@ -6,6 +6,8 @@ if(!isset($_SESSION['on'])){
     header('Location: login.php');
 }
 
+require_once '../Assets/Php/Functions/db.php';
+
 require_once '../Assets/Php/Functions/isAdmin.php';
 $isAdmin = isAdmin($_SESSION['id']);
 
@@ -20,3 +22,19 @@ include '../Assets/Php/Includes/header.php';
 
 <body>
     <?php include '../Assets/Php/Includes/nav.php'; ?>
+
+    <main>
+        <h1>Créer un ticket</h1>
+        <form action="../Assets/Php/Functions/createTicket.php" method="post">
+            <input type="text" name="title" placeholder="Nom du Ticket" required>
+                <?php include '../Assets/Php/Includes/flair.php'; ?>
+            <textarea name="content" placeholder="Description du ticket" required ></textarea>
+            <div id="buttons">
+                <select name="mention" placeholder="Mention">
+                    <?php include '../Assets/Php/Includes/mention.php'; ?>
+                </select>
+                <input type="submit" value="Créer">
+            </div>
+        </form>
+    </main>
+<script src="../Assets/Js/flair.js"></script>
