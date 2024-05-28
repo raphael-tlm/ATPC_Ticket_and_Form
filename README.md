@@ -7,21 +7,20 @@
 [![Static Badge](https://img.shields.io/badge/Made%20For-ATPC-blue?style=for-the-badge&labelColor=black&color=lime&link=https%3A%2F%2Fatpc.ovh%2F)](https://atpc.ovh)
 [![Static Badge](https://img.shields.io/badge/PHP-blue?style=for-the-badge&logo=php&logoSize=auto&label=%20&labelColor=black&color=%234f5b93)](https://www.php.net/)
 
-![Static Badge](https://img.shields.io/badge/0.0-blue?style=for-the-badge&logo=git&logoSize=auto&labelColor=white&color=white)
+![Static Badge](https://img.shields.io/badge/0.17-blue?style=for-the-badge&logo=git&logoSize=auto&labelColor=white&color=white)
 
 </center>
 
 ## Features Available now 
 
-None . . . 
+- Login with User / Admin side base on a DB
 
 ## Features In progress
 
-None . . .
+- Creating Ticket and viewing them (as and User)
 
 ## Features To be done
 
-- Login system 
 - Password retrieval
 - Ticket creation
 - Message Management 
