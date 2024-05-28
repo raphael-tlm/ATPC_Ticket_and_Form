@@ -1,12 +1,24 @@
 - [x] Data Base connection 
-- [x] Login
+- [ ] Login
     - [x] Login UI 
     - [x] Login UX
     - [x] Error handler
     - [x] Redirection 
+    - [ ] Password recovery
 - [x] Register 
     - [x] Register UI
     - [x] Register UX
     - [x] Error handler 
     - [x] Redirection
     - [x] Already existing mail
+- [ ] Home page
+    - [ ] Home Global UI 
+    - [ ] Home Global UX
+    - [ ] Home User Side
+    - [ ] Home Admin Side
+    - [ ] Redirection
+- [ ] User Ticket
+    - [ ] Ticket Creation 
+    - [ ] Ticket Global View
+    - [ ] Ticket Archive
+    - [ ] Texting Systeme 
