@@ -12,11 +12,11 @@
     - [x] Redirection
     - [x] Already existing mail
 - [ ] Home page
-    - [ ] Home Global UI 
+    - [x] Home Global UI 
     - [ ] Home Global UX
-    - [ ] Home User Side
+    - [x] Home User Side
     - [ ] Home Admin Side
-    - [ ] Redirection
+    - [?] Redirection
 - [ ] User Ticket
     - [ ] Ticket Creation 
     - [ ] Ticket Global View
