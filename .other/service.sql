@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 28 mai 2024 à 17:50
+-- Généré le : mar. 28 mai 2024 à 20:53
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -32,6 +32,9 @@ CREATE TABLE `flair` (
   `Label` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `flair`
+--
 
 -- --------------------------------------------------------
 
@@ -65,7 +68,9 @@ CREATE TABLE `possede` (
 
 CREATE TABLE `ticket` (
   `Id_Ticket` int(11) NOT NULL,
+  `Titre` varchar(100) NOT NULL,
   `Statut` varbinary(1) NOT NULL,
+  `Id_Mention` int(11) DEFAULT NULL,
   `Id_Utilisateur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -86,6 +91,15 @@ CREATE TABLE `utilisateur` (
   `Token_Exp` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `utilisateur`
+--
+
+--
+-- Index pour les tables déchargées
+--
+
+--
 -- Index pour la table `flair`
 --
 ALTER TABLE `flair`
@@ -127,25 +141,25 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `flair`
 --
 ALTER TABLE `flair`
-  MODIFY `Id_Flair` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id_Flair` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `message`
 --
 ALTER TABLE `message`
-  MODIFY `Id_Message` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_Message` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT pour la table `ticket`
 --
 ALTER TABLE `ticket`
-  MODIFY `Id_Ticket` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_Ticket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `Id_Utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id_Utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Contraintes pour les tables déchargées
