@@ -92,6 +92,15 @@ main form #flairList{
     gap: 1rem;
 }
 
+main form #flairDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
 .flair{
     padding: 0.5rem;
     font-size: 1.5rem;
