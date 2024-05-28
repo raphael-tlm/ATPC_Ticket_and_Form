@@ -23,10 +23,12 @@ include ('../Assets/Php/Includes/header.php');
         <form action="../Assets/Php/Functions/login.php" method="post">
             <input type="text" name="mail" placeholder="Entrez votre e-mail . . ." required>
             <input type="password" name="password" placeholder="Entrez votre mot de passe . . .">
+            <div>
+                <button id="register">S'inscrire</button>
             <input type="submit" value="Se connecter">
+            </div>
         </form>
         <div id="link">
-            <a href="register.php">Pas encore inscrit ?</a>
             <a href="forgot.php">Mot de passe oublié ?</a>
         </div>
     </div>

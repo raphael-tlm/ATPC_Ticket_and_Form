@@ -48,12 +48,45 @@ body{
 }
 
 #box input{
-    width: 70%;
+    width: 80%;
     height: 40px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #333;
     border-radius: 5px;
+    background-color: #fff;
+}
+
+#box button{
+    width: 35%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+#box button:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+#box input[type="submit"]{
+    width: 35%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+#box input[type="submit"]:hover{
+    background-color: #333;
+    color: #fff;
 }
 
 #link a{
