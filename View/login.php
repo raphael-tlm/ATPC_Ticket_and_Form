@@ -25,7 +25,7 @@ include ('../Assets/Php/Includes/header.php');
             <input type="password" name="password" placeholder="Entrez votre mot de passe . . .">
             <div>
                 <button id="register">S'inscrire</button>
-            <input type="submit" value="Se connecter">
+                <input type="submit" value="Se connecter">
             </div>
         </form>
         <div id="link">
@@ -34,3 +34,4 @@ include ('../Assets/Php/Includes/header.php');
     </div>
 </body>
 <script src="../Assets/Js/popup.js"></script>
+<script src="../Assets/Js/redirection.js"></script>
