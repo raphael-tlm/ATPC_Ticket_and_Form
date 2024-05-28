@@ -26,7 +26,7 @@ include ('../Assets/Php/Includes/header.php');
             <input type="text" name="mail" placeholder="Entrez votre e-mail . . ." required>
             <input type="password" name="password" placeholder="Entrez votre mot de passe . . ." required>
             <div>
-                <button id="login">Se connecter</button>
+                <button id="login" type="button">Se connecter</button>
                 <input type="submit" value="S'inscrire">
             </div>
         </form>
