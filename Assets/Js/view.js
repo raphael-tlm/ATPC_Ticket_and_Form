@@ -1,6 +1,7 @@
 const flairs = document.querySelector('#flair');
 const chat = document.querySelector('#chat');
 const MC = document.querySelector('#MC');
+const chatInput = document.querySelector('#message');
 
 flairs.addEventListener('wheel', (e) => {
     e.preventDefault();
@@ -15,4 +16,6 @@ chat.addEventListener('wheel', (e) => {
 onload = () => {
     MC.style.display = 'flex';
     chat.scrollTop = chat.scrollHeight;
+    chatInput.focus();
 }
+

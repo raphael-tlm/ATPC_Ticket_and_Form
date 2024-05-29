@@ -37,9 +37,9 @@ include '../Assets/Php/Includes/header.php';
             <div id="chat">
                     <?php include '../Assets/Php/Includes/chat.php';?>
             </div>
-            <form id="messaging" action="../Assets/Php/Functions/sendMessage.php" method="post">
+            <form id="messaging" action="../Assets/Php/Functions/sendMsg.php" method="post">
                 <input type="text" name="message" id="message" placeholder="Message">
-                <input type="hidden" name="ticket" value="<?= $data['Id_Ticket'] ?>">
+                <input type="hidden" name="idTicket" value="<?= $data['Id_Ticket'] ?>">
                 <button>Envoyer</button>
             </form>
         </div>
