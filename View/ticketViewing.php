@@ -2,55 +2,46 @@
 
 session_start();
 
-require_once ('../Assets/Php/Functions/db.php');
-require_once ('../Assets/Php/Functions/verifTicket.php');
-require_once ('../Assets/Php/Functions/isAdmin.php');
+if(!isset($_SESSION['on'])){
+    header('Location: ../index.php');
+}
+
+require_once '../Assets/Php/Functions/verifTicket.php';
+require_once '../Assets/Php/Functions/isAdmin.php';
+require_once '../Assets/Php/Functions/getFlair.php';
+
+
 $isAdmin = isAdmin($_SESSION['id']);
 
 $data = verifTicket($_GET['ITPM'], $isAdmin);
 
-require_once ('../Assets/Php/Functions/getFlair.php');
-
 $title = $data['Titre'];
-$style = "viewing";
+$style = 'viewing';
+include '../Assets/Php/Includes/header.php';
 
-include ('../Assets/Php/Includes/header.php');
 ?>
 
 <body>
-    <div id="navFlex">
-    <nav>
-        <div id="logo">
-            <img src="../Assets/Images/logo.png" alt="Logo" height="200px">
-        </div>
-        <menu>
-            <a href="../index.php"><image src="../Assets/Images/home.png" height="50px" title="Accueil"></image></a>
-            <?php if(!$isAdmin){ echo '<a href="newticket.php"><image src="../Assets/Images/plus.png" height="50px" title="Créer un ticket"></image></a>';}?>
-            <?php if(!$isAdmin){ echo '<a href="list.php"><image src="../Assets/Images/pile.png" height="50px" title="Liste des tickets"></image></a>';}?>
-            <?php if(!$isAdmin){ echo '<a href="../index.php"><image src="../Assets/Images/archive.png" height="50px" title="Tickets archivé"></image></a>';}?>
-            
-            <a href="../Assets/Php/Functions/logout.php"><image src="../Assets/Images/disconnect.png" height="50px" title="Se déconnecter"></image></a>
-        </menu>
-    </nav>
-        <div id = "ui">
-            <div class="title">
-                <h1><?php echo $data['Titre']; ?></h1>
-                <div>
-                <?php if($isAdmin){ echo '<a href="../Assets/Php/Functions/archive.php?ITPM='.$_GET['ITPM'].'"><image src="../Assets/Images/toarchive.png" height="50px" title="Archiver le ticket"></image></a>';}?>
-                <?php if($isAdmin && $data['Statut'] == 0){ echo '<a href="../Assets/Php/Functions/view.php?ITPM='.$_GET['ITPM'].'"><image src="../Assets/Images/view.png" height="50px" title="Archiver le ticket"></image></a>';}?>
-                    <div class='list'><?php getFlair($_GET['ITPM']) ?></div>
-                </div>
-              </div>
-            <div class="chatting"  style="display:none;">
-                <div id="chat">
-                <?php include ('../Assets/Php/Includes/chat.php'); ?>
-                </div>
-                <form method="post" action="../Assets/Php/Functions/sendMsg.php" id="inputChat">
-                    <input type="text" id="message" name="message" placeholder="Message" require>
-                    <button>Envoyer</button>
-                </form>
+        <?php include '../Assets/Php/Includes/nav.php'; ?>
+        <div id="MC" style="display: none;">
+            <div id="ribbon">
+                <h1><?= $data['Titre'] ?></h1>
+                <?php 
+                // For admin doing it after
+                ?>
+                <div id="flair">
+                    <?php getFlair($data['Id_Ticket']); ?>
+                </div>        
             </div>
+
+            <div id="chat">
+                    <?php include '../Assets/Php/Includes/chat.php';?>
+            </div>
+            <form id="messaging" action="../Assets/Php/Functions/sendMessage.php" method="post">
+                <input type="text" name="message" id="message" placeholder="Message">
+                <input type="hidden" name="ticket" value="<?= $data['Id_Ticket'] ?>">
+                <button>Envoyer</button>
+            </form>
         </div>
-    </div>
 </body>
 <script src="../Assets/Js/view.js"></script>

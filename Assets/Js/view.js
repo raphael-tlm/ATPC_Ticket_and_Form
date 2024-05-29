@@ -1,20 +1,18 @@
-const chatting = document.querySelector('.chatting');
-const ui = document.querySelector('#ui');
+const flairs = document.querySelector('#flair');
+const chat = document.querySelector('#chat');
+const MC = document.querySelector('#MC');
 
-const list = document.querySelector('.list');
+flairs.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    flairs.scrollLeft += e.deltaY;
+});
 
-onload =() => {
-    chatting.style.display = 'flex';
-    chatting.scrollTop += chatting.scrollHeight;
+chat.addEventListener('wheel', (e) => { 
+    e.preventDefault();
+    chat.scrollTop += e.deltaY;
+});
 
+onload = () => {
+    MC.style.display = 'flex';
+    chat.scrollTop = chat.scrollHeight;
 }
-
-chatting.addEventListener('wheel', function(event) {
-    this.scrollTop += event.deltaY;
-});
-
-
-
-list.addEventListener("wheel", function(event){
-    this.scrollLeft += event.deltaY;
-});
