@@ -16,5 +16,8 @@ include_once('../Assets/Php/Includes/header.php');
 
 ?>
 
-<body>
+<body >
     <?php include_once('../Assets/Php/Includes/nav.php'); ?>
+
+</body>
+<script src="../Assets/Js/load.js"></script>

@@ -34,3 +34,4 @@ include ('../Assets/Php/Includes/header.php');
 </body>
 <script src="../Assets/Js/redirection.js"></script>
 <script src="../Assets/Js/popup.js"></script>
+<script src="../Assets/Js/load.js"></script>

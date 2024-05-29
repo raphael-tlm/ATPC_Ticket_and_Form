@@ -39,3 +39,4 @@ include '../Assets/Php/Includes/header.php';
         </div>
     </main>
 <script src="../Assets/Js/flair.js"></script>
+<script src="../Assets/Js/load.js"></script>

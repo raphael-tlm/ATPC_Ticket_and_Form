@@ -23,7 +23,7 @@ include '../Assets/Php/Includes/header.php';
 
 <body>
         <?php include '../Assets/Php/Includes/nav.php'; ?>
-        <div id="MC" style="display: none;">
+        <div id="MC">
             <div id="ribbon">
                 <h1><?= $data['Titre'] ?></h1>
                 <?php 
@@ -49,3 +49,4 @@ include '../Assets/Php/Includes/header.php';
         </div>
 </body>
 <script src="../Assets/Js/view.js"></script>
+<script src="../Assets/Js/load.js"></script>
