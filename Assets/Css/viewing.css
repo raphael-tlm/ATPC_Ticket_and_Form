@@ -1,0 +1,168 @@
+body{
+    overflow-y: hidden;
+}
+
+#navFlex{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: baseline;
+
+    width: 100%;
+
+
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ui{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav{
+    top: 0;
+    left: 0;
+
+    background-color: #333;
+    color: white;
+
+    height: 100vh;
+    min-width:350px;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+menu{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+
+    height: 50%;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+
+    width: 100%;
+
+
+    background-color: #333;
+}
+.title div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 50%;
+}
+
+
+.title h1{
+    font-size: 3em;
+    font-weight: bold;
+
+    color:#14a33a;
+}
+
+.title .list{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.chatting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 5px;
+
+    font-size: 1.5rem;
+}
+
+.me{
+    align-items: flex-end;
+}
+
+.user{
+    font-weight: bold;
+    color: #1100ff;
+}
+.me .user{
+    color: #14a33a;
+}
+
+.content{
+    background-color: #b3b2f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.me .content{
+    background-color: #b2f0da;
+}
+
+.flair{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: max-content;
+    background-color: #333;
+    color: white;
+}
+
+.flair:hover{
+    background-color: #ccc;
+    color: #333;
+}
+
+.keyboard{
+    width: 100%;
+    background-color: #1100ff;
+}
