@@ -42,7 +42,13 @@ include ('../Assets/Php/Includes/header.php');
                 </div>
               </div>
             <div class="chatting"  style="display:none;">
+                <div id="chat">
                 <?php include ('../Assets/Php/Includes/chat.php'); ?>
+                </div>
+                <form method="post" action="../Assets/Php/Functions/sendMsg.php" id="inputChat">
+                    <input type="text" id="message" name="message" placeholder="Message" require>
+                    <button>Envoyer</button>
+                </form>
             </div>
         </div>
     </div>
