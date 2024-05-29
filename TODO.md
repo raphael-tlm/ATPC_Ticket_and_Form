@@ -18,7 +18,9 @@
     - [ ] Home Admin Side
     - [?] Redirection
 - [ ] User Ticket
-    - [ ] Ticket Creation 
-    - [ ] Ticket Global View
+    - [x] Ticket Creation 
+    - [?] Ticket Global View
     - [ ] Ticket Archive
-    - [ ] Texting Systeme 
+    - [x] Texting Systeme 
+    - [ ] Redirection
+    - [ ] Admin UX
