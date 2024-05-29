@@ -1,7 +1,5 @@
 <?php
-
-require_once ('db.php');
-
+require_once 'db.php';
 function isAdmin($id){
     $db = connection();
     $req = $db->prepare('SELECT * FROM utilisateur WHERE Id_Utilisateur = ?');

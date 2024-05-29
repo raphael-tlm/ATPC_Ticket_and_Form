@@ -30,11 +30,7 @@ if(isset($_POST['title']) && isset($_POST['content'])){
                 $req->execute(array($idTicket, $flair));
             }
         }
+        
+        header('Location: ../../../View/ticketViewing.php?ITPM='.$idTicket);
     }
-    else{
-        header('Location: ../../../View/createTicket.php?error=2');
-    }
-}
-else{
-    header('Location: ../../../View/createTicket.php?error=3');
 }
