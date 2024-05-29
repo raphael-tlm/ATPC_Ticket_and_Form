@@ -22,6 +22,12 @@ body{
     color: #14a33a;
 }
 
+#ribbon h1{
+    font-size: 2.5rem;
+    max-width: 50%;
+    
+}
+
 #flair{
     display:flex;
     justify-content: space-evenly;

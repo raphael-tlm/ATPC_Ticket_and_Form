@@ -27,7 +27,11 @@ include '../Assets/Php/Includes/header.php';
             <div id="ribbon">
                 <h1><?= $data['Titre'] ?></h1>
                 <?php 
-                // For admin doing it after
+                    if($isAdmin){
+                        echo '<a href="../Assets/Php/Functions/pin.php?ITPM='.$data['Id_Ticket'].'"><image src="../Assets/Images/fav.png" height="50px" title="Archiver"></image></a>';
+                        echo '<a href="../Assets/Php/Functions/inprogress.php?ITPM='.$data['Id_Ticket'].'"><image src="../Assets/Images/view.png" height="50px" title="Archiver"></image></a>';
+                        echo '<a href="../Assets/Php/Functions/archive.php?ITPM='.$data['Id_Ticket'].'"><image src="../Assets/Images/toarchive.png" height="50px" title="Archiver"></image></a>';
+                    }
                 ?>
                 <div id="flair">
                     <?php getFlair($data['Id_Ticket']); ?>
