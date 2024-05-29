@@ -82,6 +82,8 @@ main form #flair{
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    min-width: max-content;
+    width: 100%;
 }
 
 main form #flairList{
@@ -90,6 +92,9 @@ main form #flairList{
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    max-width: 50%;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 main form #flairDisplay{
@@ -98,7 +103,10 @@ main form #flairDisplay{
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    max-width: 30%;
 
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .flair{
@@ -107,6 +115,7 @@ main form #flairDisplay{
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+    min-width: max-content;
 }
 
 .flair:hover{

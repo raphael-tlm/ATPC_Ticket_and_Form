@@ -26,9 +26,9 @@ include '../Assets/Php/Includes/header.php';
     <main>
         <h1>Créer un ticket</h1>
         <form action="../Assets/Php/Functions/createTicket.php" method="post">
-            <input type="text" name="title" placeholder="Nom du Ticket" required>
+            <input type="text" name="title" placeholder="Nom du Ticket" required maxlength="100">
                 <?php include '../Assets/Php/Includes/flair.php'; ?>
-            <textarea name="content" placeholder="Description du ticket" required ></textarea>
+            <textarea name="content" placeholder="Description du ticket" required maxlength="400"></textarea>
             <div id="buttons">
                 <select name="mention" placeholder="Mention">
                     <?php include '../Assets/Php/Includes/mention.php'; ?>

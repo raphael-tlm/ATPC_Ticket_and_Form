@@ -65,3 +65,10 @@ onload = function(){
     flairDisplay.style.display = "none";
 }
     
+flairDisplay.addEventListener("wheel", function(event){
+    this.scrollLeft += event.deltaY;
+});
+
+flairList.addEventListener("wheel", function(event){
+    this.scrollLeft += event.deltaY;
+});
