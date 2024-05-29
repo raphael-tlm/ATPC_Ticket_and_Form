@@ -4,7 +4,6 @@ const flairDisplay = document.getElementById("flairDisplay")
 const hiddenItems = document.getElementById("hiddenItems")
 
 function addFlair(flair){
-    flair.style.display = "block";
     flairList.appendChild(flair);
     C_hiddenFlair(flair);
     hideDisplay();

@@ -21,9 +21,9 @@ include '../Assets/Php/Includes/header.php';
 ?>
 
 <body>
-    <?php include '../Assets/Php/Includes/nav.php'; ?>
-
     <main>
+    <?php include '../Assets/Php/Includes/nav.php'; ?>
+    <div class="mainContent">
         <h1>Créer un ticket</h1>
         <form action="../Assets/Php/Functions/createTicket.php" method="post">
             <input type="text" name="title" placeholder="Nom du Ticket" required maxlength="100">
@@ -36,5 +36,6 @@ include '../Assets/Php/Includes/header.php';
                 <input type="submit" value="Créer">
             </div>
         </form>
+        </div>
     </main>
 <script src="../Assets/Js/flair.js"></script>
